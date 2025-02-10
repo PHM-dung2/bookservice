@@ -17,22 +17,29 @@
 </head>
 <body>
 	<div class="box">
-		<h2>도서 생성</h2>
+		<h2>도서 수정</h2>
 		<hr>
 		<div>도서 이름 :</div>
-		 <input type="text"   name ="bname" class="form-control bnameinput" id="floatingInput" placeholder="도서이름"><br/>
+		<input type="text" name="bname" class="form-control bnamebox"
+			id="floatingInput" placeholder="도서이름"><br />
 		<div>저자 :</div>
-		<input type="text"  name ="bwriter" class="form-control bwriterinput" id="floatingInput" placeholder="저자"><br/>
+		<input type="text" name="bwriter" class="form-control bwriterbox"
+			id="floatingInput" placeholder="저자"><br />
 		<div>출판사 :</div>
-		<input type="text"  name ="bpublisher" class="form-control bpublisherinput" id="floatingInput" placeholder="출판사"><br/>
+		<input type="text" name="bpublisher"
+			class="form-control bpublisherbox" id="floatingInput"
+			placeholder="출판사"><br />
+		<div>
+			<button type="button" class="btn btn-primary" onclick="bookupdate()">수정</button>
+			<button type="button" class="btn btn-primary" onclick="viewpage()">취소</button>
+		</div>
 
-		<button type= "button" class="btn btn-primary" onclick="bwrite()">submit</button>
 	</div>
 
 
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-	<script src="/bookservice/js/write.js" type="text/javascript"></script>
+	<script src="/bookservice/js/update.js" type="text/javascript"></script>
 </body>
 </html>
