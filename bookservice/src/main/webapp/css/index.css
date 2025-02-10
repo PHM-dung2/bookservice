@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body{background-color : #f2f2ea}
+
 
 
 @font-face {
@@ -22,3 +22,4 @@ body{background-color : #f2f2ea}
 	object-fit : contain
 	
 }
+body{background-color : rgb(242, 242, 242)}
