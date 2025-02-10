@@ -53,10 +53,24 @@ public class BookDao extends Dao{
 	} // f end
 	
 //	3. 도서 상세 정보 조회
-//	public BookDto findByBno( int bno ) {
-//		
-//		return result;
-//	} // f end
+	public BookDto findByBno( int bno ) {
+		BookDto result = new BookDto();
+		try {
+			String sql = "select * from book where bno = ?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+				ps.setInt(1, bno);
+			ResultSet rs = ps.executeQuery();
+			if( rs.next() ) {
+				result.setBno(rs.getInt("bno"));
+				result.setBname(rs.getString("bname"));
+				result.setBwriter(rs.getString("bwriter"));
+				result.setBpublisher(rs.getString("bpublisher"));
+				result.setBdate(rs.getString("bdate"));
+				result.setBupdate(rs.getString("bupdate"));
+			} // if end
+		}catch( SQLException e ) { System.out.println(e); }
+		return result;
+	} // f end
 	
 //	4. 도서 정보 수정
 	public boolean update( BookDto bookDto ) {
