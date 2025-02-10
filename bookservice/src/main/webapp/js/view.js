@@ -26,7 +26,7 @@ const updatepage = () =>{
 }
 
 const bookdelete = () =>{
-	let result = confirm('정말 탈퇴 하실건가요?');
+	let result = confirm('정말 삭제 하실건가요?');
 	if(result ==false)return;
 	const option = {method:'DELETE'}
 	fetch(`/bookservice/book?bno=${bno},`,option)
