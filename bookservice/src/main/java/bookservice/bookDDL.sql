@@ -21,4 +21,3 @@ insert into book(bname, bwriter, bpublisher, bdate, bupdate) values
 ( '칼의 노래', '김훈', '문학동네', '2025-02-05 16:20:55', '2025-02-05 17:00:40' );
 
 select * from book;
-
