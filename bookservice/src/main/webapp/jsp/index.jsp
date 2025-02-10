@@ -23,7 +23,7 @@
 					<th>도서명</th>
 					<th>저자</th>
 					<th>출판사</th>
-				
+					<th>비고</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -31,7 +31,7 @@
 			</tbody>
 
 		</table>
-		<button class="btn btn-primary" onclick="location.href='/jsp/write.jsp'">
+		<button class="btn btn-primary" onclick="location.href='/bookservice/jsp/write.jsp'">
 			도서 생성하기</button>
 	</div>
 	
